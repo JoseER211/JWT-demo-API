@@ -10,6 +10,14 @@ public class User {
     private String pwd;
     private String token;
 
+    public User() {
+    }
+    public User(String user, String pwd, String token) {
+        this.user = user;
+        this.pwd = pwd;
+        this.token = token;
+    }
+
     public String getUser() {
         return user;
     }
