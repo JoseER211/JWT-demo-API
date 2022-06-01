@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
-    @RequestMapping("hello")
+    @RequestMapping("welcome")
     public String helloWorld(@RequestParam(value="name", defaultValue="World") String name) {
-        return "Hello "+name+"!!";
+        return "Bienvenido al sistema "+name+"!!";
     }
 }
